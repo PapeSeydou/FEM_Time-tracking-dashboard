@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,6 +11,296 @@ html {
 
 body {
   font-family: Rubik, sans-serif;
+}
+
+button {
+  /* Making it transparent  */
+  background-color: transparent;
+  border: none;
+  /* Size */
+  display: block;
+}
+
+.option-button {
+  display: block;
+  height: 28px;
+  padding: 0 0 0 24px;
+}
+.option-button svg {
+  height: 6px;
+  width: 21px;
+}
+.option-button svg path {
+  /* fill: #000; */
+}
+
+/* Profile Card */
+.profile-card {
+  /* Layout */
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 16px;
+}
+@media (min-width: 875px) {
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.profile-card .profile-card-info {
+  padding: 32px 30px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: hsl(246, 80%, 60%);
+}
+@media (min-width: 875px) {
+  .profile-card .profile-card-info {
+    flex: 1 0 auto;
+    padding: 34px 30px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+  }
+}
+.profile-card .profile-card-info .profile-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+@media (min-width: 875px) {
+  .profile-card .profile-card-info .profile-picture {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+  }
+}
+.profile-card .profile-card-info .profile-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+@media (min-width: 875px) {
+  .profile-card .profile-card-info .profile-info-wrapper {
+    gap: 4px;
+  }
+}
+.profile-card .profile-card-info .profile-info-wrapper .profile-subheading {
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+}
+.profile-card .profile-card-info .profile-info-wrapper h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+@media (min-width: 875px) {
+  .profile-card .profile-card-info .profile-info-wrapper h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.profile-card .profile-card-nav {
+  padding: 11px 0;
+}
+
+/* Navigation component */
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+@media (min-width: 875px) {
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+}
+nav ul li {
+  height: 48px;
+}
+nav ul li .date-nav-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+}
+@media (min-width: 875px) {
+  nav ul li .date-nav-button {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 32px;
+  }
+}
+
+/* Active date-nav-button */
+.date-nav-active {
+  color: white !important;
+}
+
+/* Statistic Cards */
+.stat-card {
+  /* Layout */
+  padding-top: 38px;
+  border-radius: 16px;
+  /* Background-image */
+  background-repeat: no-repeat;
+  background-position: top -11px right 16px;
+  overflow: hidden;
+}
+@media (min-width: 875px) {
+  .stat-card {
+    /* Layout */
+    padding-top: 45px;
+  }
+}
+.stat-card .card-content-wrapper {
+  /* Layout */
+  background-color: hsl(235, 46%, 20%);
+  padding: 24px;
+  border-radius: 16px 16px 15px 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (min-width: 875px) {
+  .stat-card .card-content-wrapper {
+    padding: 30px;
+  }
+}
+.stat-card .card-content-wrapper .card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-card .card-content-wrapper .card-title-row .stat-card-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.stat-card .card-content-wrapper .card-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.stat-card .card-content-wrapper .card-stat-row .stat-main {
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+}
+@media (min-width: 875px) {
+  .stat-card .card-content-wrapper .card-stat-row .stat-main {
+    font-size: 56px;
+  }
+}
+.stat-card .card-content-wrapper .card-stat-row .stat-alt {
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+}
+@media (min-width: 875px) {
+  .stat-card .card-content-wrapper .card-stat-row {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+}
+
+/* Cards Styling */
+.card-work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("./../../images/icon-work.svg");
+}
+
+.card-play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("./../../images/icon-play.svg");
+}
+
+.card-study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("./../../images/icon-study.svg");
+}
+
+.card-exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("./../../images/icon-exercise.svg");
+}
+
+.card-social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("./../../images/icon-social.svg");
+}
+
+.card-self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("./../../images/icon-self-care.svg");
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  min-height: 100vh;
+}
+
+main {
+  /* max-width: 1112px; */
+  max-width: 1160px;
+  margin: 0 auto;
+}
+@media (min-width: 875px) {
+  main {
+    display: flex;
+    align-items: center;
+    max-width: 1272px;
+    min-height: 100vh;
+  }
+}
+
+.container {
+  margin: 80px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 875px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 40px 80px;
+  }
+}
+@media (min-width: 1080px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.stat-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 570px) {
+  .stat-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+@media (min-width: 875px) {
+  .stat-cards-wrapper {
+    gap: 30px;
+  }
+}
+@media (min-width: 1080px) {
+  .stat-cards-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

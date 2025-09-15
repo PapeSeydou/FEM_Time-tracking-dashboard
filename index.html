@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styling/style.css">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
+  <script defer src="./index.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -26,74 +27,146 @@
 </head>
 
 <body>
+  <main>
+    <div class="container">
+      <aside class="profile-card">
+        <div class="profile-card-info">
+          <img src="./images/image-jeremy.png" alt="profile picture" class="profile-picture">
+          <section class="profile-info-wrapper">
+            <span class="profile-subheading">Report for</span>
+            <h1>Jeremy Robson</h1>
+          </section>
+        </div>
+        <div class="profile-card-nav">
+          <nav>
+            <ul>
+              <li><button class="date-nav-button">Daily</button></li>
+              <li><button class="date-nav-button">Weekly</button></li>
+              <li><button class="date-nav-button">Monthly</button></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    
+      <div class="stat-cards-wrapper">
 
-  <p>Report for</p>
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  <article class="stat-card">
-    <div class="card-content-wrapper">
-      <div class="card-title-row">
-        <h2 class="stat-card-title">Work</h2>
-        <button class="option-button">
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
-        </button>
-      </div>
-      <div class="card-stat-row">
-        <span class="stat-main">5hrs</span>
-        <span class="stat-alt">Previous - 7hrs</span>
+        <article class="stat-card card-work">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
+    
+        <article class="stat-card card-play">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
+    
+        <article class="stat-card card-study">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
+    
+        <article class="stat-card card-exercise">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
+    
+        <article class="stat-card card-social">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
+    
+        <article class="stat-card card-self-care">
+          <div class="card-content-wrapper">
+            <div class="card-title-row">
+              <h2 class="stat-card-title">Card</h2>
+              <button class="option-button">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF" fill-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-stat-row">
+              <span class="stat-main">0hrs</span>
+              <span class="stat-alt">Previous - 0hrs</span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </article>
+  </main>
 
-  <article class="stat-card">
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-  </article>
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
 
 
   <div class="attribution">

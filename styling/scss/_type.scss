@@ -1,5 +1,33 @@
 @use 'base';
 
-@mixin fontEmphasis{
-    
+@mixin stat-main{
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+
+    @media (min-width: base.$viewport-m){
+        font-size: 56px;
+    }
+}
+
+@mixin sub-text(){
+    font-size: 15px;
+}
+
+@mixin heading{
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+
+    @media (min-width: base.$viewport-m){
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+}
+
+@mixin base-text($font-weight: 400){
+    font-size: 18px;
+    font-weight: $font-weight;
+    color: white;
 }

@@ -7,7 +7,7 @@ $navy-200: hsl(236, 100%, 87%);
 
 
 $purple-600: hsl(246, 80%, 60%);
-$orange-300: hsl(15, 100%, 70%);  //(work)
+$orange-300: hsl(15, 100%, 70%);  //work
 $blue-300: hsl(195, 74%, 62%); //play
 $pink-400: hsl(348, 100%, 68%); //study
 $green-400: hsl(145, 58%, 55%); //exercisee
@@ -17,6 +17,7 @@ $yellow-300: hsl(43, 84%, 65%); //self-care
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
     font-size: 18px;
@@ -24,3 +25,7 @@ html{
 body{
     font-family: Rubik, sans-serif;
 }
+
+$viewport-s : 570px;
+$viewport-m : 875px;
+$viewport-l : 1080px;
